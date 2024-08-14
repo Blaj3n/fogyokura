@@ -2,7 +2,7 @@ hetek_szama = int(input("Hetek száma="))
 cel_testtomeg = float(input("Elérni kívánt testtömeg (kg)="))
 tomegek = []
 for het in range(1, hetek_szama+1):
-    tomeg = float(int(input(f"{het}. héten=")))
+    tomeg = float(input(f"{het}. héten="))
     tomegek.append(tomeg)
 
 cel_elert = False
@@ -16,8 +16,8 @@ for tomeg in tomegek:
     index += 1
     if tomeg > cel_testtomeg:
         nov_suly += 1
-print(f"A tömege {nov_suly} esetben nőtt egyik hétről a másikra. ")
+print(f"A tömege {nov_suly}. esetben nőtt egyik hétről a másikra.")
 
 if not cel_elert:
     print("Sajnos Mari néni nem érte el a célját.")
-
+# 'if cel_elert' == if cel_elert = True
